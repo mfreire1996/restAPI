@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+}
+
+.nav {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.nav h1 {
+  margin: 0 2rem;
+}
+.nav a {
+  margin: 0 2rem 0 0;
+}
+.nav i {
+  margin: 0 0.5rem;
+}
+.nav .dark-mode {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav i {
+  cursor: pointer;
+}
+
+.search {
+  position: relative;
+  display: inline-block;
+}
+
+i.fa-magnifying-glass {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+input[type=text] {
+  padding-left: 30px; /* Adjust the padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px; /* Adjust the height as needed */
+}
+
+#search {
+  display: inline-flex;
+  width: 100%;
+  padding: 1.5rem 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: none;
+}
+
+.custom-placeholder::-moz-placeholder {
+  position: absolute;
+  left: 2rem;
+}
+
+.custom-placeholder::placeholder {
+  position: absolute;
+  left: 2rem;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #000;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  margin: 20px auto;
+  max-width: 1500px;
+  height: auto;
+  text-align: left;
+}
+.countries img {
+  width: 100%;
+  height: auto;
+}
+
+#countries h2 {
+  margin-left: 2rem;
+}
+
+.country-div {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0 0 2rem 0;
+}
+
+@media screen and (max-width: 576px) {
+  .countries {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */

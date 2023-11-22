@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="icon" href="favicon-32x32.png">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>REST Countries API</title>
+</head>
+<body>
+    <nav class="nav">
+        <h1>Where in the world?</h1>
+        <div class="dark-mode">
+            <i class="fa-regular fa-moon"></i>
+            <a href="">Dark Mode</a>
+        </div>
+
+    </nav>
+
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search for a country..." class="custom-placeholder">
+        </div>
+
+        
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Filter by Region
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Africa</a>
+              <a href="#">America</a>
+              <a href="#">Asia</a>
+              <a href="#">Europe</a>
+              <a href="#">Oceania</a>
+            </div>
+          </div>
+
+          <div class="countries" id="countries"></div>
+
+    <script src="restapi.js"></script>
+</body>
+</html>
